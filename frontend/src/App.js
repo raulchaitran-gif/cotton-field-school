@@ -14,11 +14,6 @@ import Gallery from './pages/Gallery';
 import Calendar from './pages/Calendar';
 import FacebookFeed from './pages/FacebookFeed';
 
-function ScrollToTop() {
-  const { pathname } = window.location;
-  React.useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-}
 
 export default function App() {
   return (
