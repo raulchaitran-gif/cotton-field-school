@@ -22,7 +22,7 @@ export default function FacebookFeed() {
       <div className="page-hero" style={{ background: 'linear-gradient(135deg, #1877f2 0%, #0c5fc9 100%)' }}>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h1>Ministry of Education Updates</h1>
-          <p>Live updates from the official Ministry of Education — Guyana Facebook page</p>
+          <p>Live updates from the official Ministry of Education Guyana Facebook page</p>
         </div>
       </div>
       <section className="section">
@@ -33,27 +33,16 @@ export default function FacebookFeed() {
                 <span style={{ color: 'white', fontWeight: 700, fontSize: '1.1rem' }}>f</span>
               </div>
               <div>
-                <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>Ministry of Education — Guyana</div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Live Facebook Feed — updates automatically</div>
+                <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>Ministry of Education Guyana</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Live Facebook Feed</div>
               </div>
             </div>
-            <a href={schoolInfo.moeFacebook} target="_blank" rel="noopener noreferrer"
-              className="btn btn-primary" style={{ background: '#1877f2', fontSize: '0.85rem' }}>
+            <a href={schoolInfo.moeFacebook} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ background: '#1877f2', fontSize: '0.85rem' }}>
               Follow Page <ExternalLink size={14} />
             </a>
           </div>
           <div className="card" style={{ padding: '1.5rem', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
-            <div
-              className="fb-page"
-              data-href="https://www.facebook.com/MinistryOfEducationGuyana"
-              data-tabs="timeline"
-              data-width="650"
-              data-height="800"
-              data-small-header="false"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-show-facepile="true"
-            />
+            <div className="fb-page" data-href="https://www.facebook.com/MinistryOfEducationGuyana" data-tabs="timeline" data-width="650" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" />
           </div>
           <div className="card" style={{ padding: '1.25rem 1.5rem', marginTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
@@ -65,8 +54,7 @@ export default function FacebookFeed() {
                 <div style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Follow our school page too</div>
               </div>
             </div>
-            <a href={schoolInfo.facebook} target="_blank" rel="noopener noreferrer"
-              className="btn btn-primary" style={{ fontSize: '0.85rem' }}>
+            <a href={schoolInfo.facebook} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>
               Follow Page <ExternalLink size={14} />
             </a>
           </div>
@@ -75,15 +63,3 @@ export default function FacebookFeed() {
     </div>
   );
 }
-```
-
-6. Press **Ctrl + S** to save
-7. Close Notepad
-
----
-
-Then go to **CMD window 2** and run:
-```
-git add .
-git commit -m "Add real Facebook embed for MOE updates"
-git push
