@@ -15,21 +15,21 @@ export const schoolInfo = {
 export const heroSlides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80",
+    image: "https://i0.wp.com/newsroom.gy/wp-content/uploads/2025/02/42831118_2139506419394967_7087253997601423360_n.jpg",
     title: "Towards Community Development",
     subtitle: "Cotton Field Secondary School — Anna Regina, Guyana",
     cta: "Learn More"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80",
+    image: "https://scontent-for2-1.xx.fbcdn.net/v/t39.30808-6/472138068_10162998898729283_6334689867549058437_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f798df&_nc_ohc=O-q-shmQDbQQ7kNvwHoCH0x&_nc_oc=Ado_JUMMxnSa2dxs-kmfuu5kKuk6zUbqBcNJHfUFLibDDMmDnXH9kY8Xt_z2le4RZyv5MKBNaMhhPdZIJiRZ3ePA&_nc_zt=23&_nc_ht=scontent-for2-1.xx&_nc_gid=T3QnpaiC3l3QfIsdfCm5WA&_nc_ss=7a30f&oh=00_AfzbxX7vTaW2DdSliTH_XDTCXEvUdypxz_xqitky218MvA&oe=69C4E410",
     title: "Excellence in Education",
     subtitle: "Empowering students since 1965",
     cta: "Our Academics"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1600&q=80",
+    image: "https://scontent-for2-2.xx.fbcdn.net/v/t51.75761-15/483557155_18263210716285037_1045591779926410750_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=9xqFiOYHC7IQ7kNvwHrfuyw&_nc_oc=AdpkahOTf4tEF-Fz2tm9-ZJNK-ktcxT4WCUmgZTtmrHfGfnCnzRHOVScknMp1Yl7uVk-exSCGhGlacIZ-WqiI0eS&_nc_zt=23&_nc_ht=scontent-for2-2.xx&_nc_gid=CekwGUnL4wwNenDu-4LT4A&_nc_ss=7a30f&oh=00_AfwHOBTeyeTcQOF4qAfYTNINAMvsk_19AREQNAzup5VBFA&oe=69C4C569",
     title: "Building Future Leaders",
     subtitle: "A community of learners, thinkers, and achievers",
     cta: "Student Life"
