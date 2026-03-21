@@ -53,7 +53,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
           <img src="/logo.png" alt="Cotton Field Secondary School Logo"
-  style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} />
+  style={{ width: 44, height: 44, borderRadius: '8px', objectFit: 'contain' }} />
           <div>
             <div style={{ color: 'white', fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: '1rem', lineHeight: 1.2 }}>
               Cotton Field
