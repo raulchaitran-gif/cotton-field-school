@@ -1,14 +1,12 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
-from pydantic import BaseModel
 from typing import Optional
 import os
 from datetime import datetime
 
 app = FastAPI(title="Cotton Field Secondary School API")
 
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,23 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# MongoDB
 MONGO_URL = os.environ.get("MONGO_URL", "mongodb://localhost:27017")
 DB_NAME = os.environ.get("DB_NAME", "cotton_field_school")
 
 client = AsyncIOMotorClient(MONGO_URL)
 db = client[DB_NAME]
-
-# ── Models ──────────────────────────────────────────────────────────────────
-
-class ContactSubmission(BaseModel):
-    name: str
-    email: str
-    phone: Optional[str] = ""
-    subject: str
-    message: str
-
-# ── Routes ──────────────────────────────────────────────────────────────────
 
 @app.get("/")
 async def root():
@@ -65,11 +51,10 @@ async def get_student_life():
     return items
 
 @app.post("/api/contact")
-async def submit_contact(data: ContactSubmission):
-    doc = data.dict()
-    doc["submitted_at"] = datetime.utcnow().isoformat()
-    await db.contact_submissions.insert_one(doc)
-    return {"success": True, "message": "Your message has been received. We will be in touch soon."}
+async def submit_contact(data: dict):
+    data["submitted_at"] = datetime.utcnow().isoformat()
+    await db.contact_submissions.insert_one(data)
+    return {"success": True, "message": "Your message has been received."}
 
 @app.get("/api/health")
 async def health():
