@@ -52,15 +52,8 @@ export default function Header() {
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 1.5rem' }}>
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
-          <div style={{
-            width: 44, height: 44,
-            background: 'rgba(255,255,255,0.15)',
-            borderRadius: '50%',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            border: '2px solid rgba(255,255,255,0.3)'
-          }}>
-            <GraduationCap size={24} color="white" />
-          </div>
+          <img src="/logo.png" alt="Cotton Field Secondary School Logo"
+  style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} />
           <div>
             <div style={{ color: 'white', fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: '1rem', lineHeight: 1.2 }}>
               Cotton Field

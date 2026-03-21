@@ -14,10 +14,8 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-              <div style={{ width: 44, height: 44, background: 'rgba(127,200,190,0.15)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid rgba(127,200,190,0.3)' }}>
-                <GraduationCap size={22} color="#7fc8be" />
-              </div>
+            <img src="/logo.png" alt="Cotton Field Secondary School Logo"
+  style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} />
               <div>
                 <div style={{ color: 'white', fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: '0.95rem' }}>Cotton Field</div>
                 <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.7rem', letterSpacing: '0.05em' }}>SECONDARY SCHOOL</div>
