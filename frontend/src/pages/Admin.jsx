@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Lock, LogOut, Plus, Trash2, Edit2, Save, X, Image, Newspaper, BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { Lock, LogOut, Trash2, Edit2, Save, X, Image, Newspaper, BookOpen } from 'lucide-react';
 
 const ADMIN_USER = 'admin';
 const ADMIN_PASS = 'cottonfield2026';
