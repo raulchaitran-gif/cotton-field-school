@@ -18,11 +18,16 @@ import Admin from './pages/Admin';
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    const main = document.querySelector('main');
+    if (main) {
+      main.classList.remove('page-transition');
+      void main.offsetWidth;
+      main.classList.add('page-transition');
+    }
   }, [pathname]);
   return null;
 }
-
 function Layout({ children }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
