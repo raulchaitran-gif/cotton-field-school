@@ -26,7 +26,7 @@ export default function Academics() {
               <div key={prog.id} className="card" style={{ overflow: 'hidden' }}>
                 <button
                   onClick={() => setOpen(open === prog.id ? null : prog.id)}
-                  style={{ width: '100%', background: 'none', border: 'none', cursor: 'pointer', padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', textAlign: 'left' }}'center', gap: '1rem', textAlign: 'left' }}
+                  style={{ width: '100%', background: 'none', border: 'none', cursor: 'pointer', padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', textAlign: 'left' }}
                 >
                   <div style={{ width: 52, height: 52, background: 'rgba(128,0,32,0.08)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>
                     {icons[prog.icon]}
@@ -55,7 +55,6 @@ export default function Academics() {
         </div>
       </section>
 
-      {/* Support Services */}
       <section className="section section-alt">
         <div className="container">
           <h2 className="section-title">Academic Support</h2>
