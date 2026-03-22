@@ -36,7 +36,6 @@ export default function Admissions() {
         </div>
       </div>
 
-      {/* Steps */}
       <section className="section">
         <div className="container">
           <h2 className="section-title">Application Process</h2>
@@ -47,9 +46,6 @@ export default function Admissions() {
                 <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'var(--burgundy)', color: 'white', fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
                   {step.num}
                 </div>
-                {i < steps.length - 1 && (
-                  <div style={{ display: 'none' }} className="step-arrow" />
-                )}
                 <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>{step.title}</h3>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: 1.6 }}>{step.desc}</p>
               </div>
@@ -58,7 +54,6 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* Requirements & Dates */}
       <section className="section section-alt">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'start' }}>
@@ -79,7 +74,7 @@ export default function Admissions() {
               <div className="divider divider-left" />
               <div className="card" style={{ overflow: 'hidden' }}>
                 {dates.map((item, i) => (
-                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', padding: '1rem 1.25rem', borderBottom: i < dates.length - 1 ? '1px solid var(--border)' : 'none', gap: '0.5rem' }}> - 1 ? '1px solid var(--border)' : 'none', gap: '1rem' }}>
+                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', padding: '1rem 1.25rem', borderBottom: i < dates.length - 1 ? '1px solid var(--border)' : 'none', gap: '0.5rem' }}>
                     <span style={{ fontSize: '0.9rem', color: 'var(--text-mid)' }}>{item.event}</span>
                     <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--burgundy)' }}>{item.date}</span>
                   </div>
@@ -90,7 +85,6 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* CTA */}
       <section style={{ background: 'var(--burgundy)', padding: '4rem 0', textAlign: 'center', color: 'white' }}>
         <div className="container">
           <h2 style={{ color: 'white', marginBottom: '1rem' }}>Questions About Admissions?</h2>
