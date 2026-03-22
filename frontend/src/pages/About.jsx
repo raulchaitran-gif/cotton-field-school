@@ -35,7 +35,7 @@ export default function About() {
       {/* Motto, Mission, Philosophy */}
       <section className="section">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {[
               { label: 'Our Motto', content: schoolInfo.motto, color: 'var(--burgundy)' },
               { label: 'Our Mission', content: schoolInfo.mission, color: 'var(--seafoam-dark)' },

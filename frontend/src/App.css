@@ -291,3 +291,8 @@ img {
   padding: 4rem;
   color: var(--text-light);
 }
+@media (max-width: 480px) {
+  .container { padding: 0 0.75rem; }
+  .btn { padding: 0.6rem 1.1rem; font-size: 0.88rem; }
+  .card { border-radius: 10px; }
+}

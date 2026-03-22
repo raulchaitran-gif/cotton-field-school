@@ -61,7 +61,7 @@ export default function Admissions() {
       {/* Requirements & Dates */}
       <section className="section section-alt">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             <div>
               <h2 style={{ color: 'var(--burgundy)', marginBottom: '1rem' }}>Required Documents</h2>
               <div className="divider divider-left" />
@@ -79,9 +79,9 @@ export default function Admissions() {
               <div className="divider divider-left" />
               <div className="card" style={{ overflow: 'hidden' }}>
                 {dates.map((item, i) => (
-                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem 1.25rem', borderBottom: i < dates.length - 1 ? '1px solid var(--border)' : 'none', gap: '1rem' }}>
+                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', padding: '1rem 1.25rem', borderBottom: i < dates.length - 1 ? '1px solid var(--border)' : 'none', gap: '0.5rem' }}> - 1 ? '1px solid var(--border)' : 'none', gap: '1rem' }}>
                     <span style={{ fontSize: '0.9rem', color: 'var(--text-mid)' }}>{item.event}</span>
-                    <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--burgundy)', whiteSpace: 'nowrap' }}>{item.date}</span>
+                    <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--burgundy)' }}>{item.date}</span>
                   </div>
                 ))}
               </div>

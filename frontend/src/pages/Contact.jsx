@@ -41,7 +41,7 @@ export default function Contact() {
 
       <section className="section">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '4rem', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             {/* Info */}
             <div>
               <h2 style={{ color: 'var(--burgundy)', marginBottom: '0.5rem' }}>Get In Touch</h2>
