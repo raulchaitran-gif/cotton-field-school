@@ -11,9 +11,6 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
-  const prev = () => setSlide(s => (s - 1 + heroSlides.length) % heroSlides.length);
-  const next = () => setSlide(s => (s + 1) % heroSlides.length);
-
   const facilityIcons = { flask: '🔬', monitor: '💻', 'book-open': '📚', activity: '⚽' };
 
   return (
