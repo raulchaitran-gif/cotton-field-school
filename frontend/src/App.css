@@ -297,5 +297,22 @@ img {
   .card { border-radius: 10px; }
 }
 @media (max-width: 600px) {
-  .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+  .stats-bar { 
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0.75rem !important;
+    gap: 0;
+  }
+  .stats-bar > div {
+    padding: 0.6rem 0.25rem !important;
+    border-right: none !important;
+    font-size: 0.85rem;
+  }
+  .stats-bar > div:nth-child(1),
+  .stats-bar > div:nth-child(2) {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .stats-bar > div:nth-child(1),
+  .stats-bar > div:nth-child(3) {
+    border-right: 1px solid rgba(255,255,255,0.15) !important;
+  }
 }

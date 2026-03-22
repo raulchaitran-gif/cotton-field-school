@@ -78,7 +78,7 @@ export default function Home() {
           ].map((stat, i) => (
             <div key={i} style={{ textAlign: 'center', padding: '0.5rem', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
               <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.25rem', opacity: 0.8 }}>{stat.icon}</div>
-              <div style={{ fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: '1.4rem' }}>{stat.value}</div>
+              <div style={{ fontFamily: 'Merriweather, serif', fontWeight: 700, fontSize: 'clamp(1rem, 3vw, 1.4rem)' }}>{stat.value}</div>
               <div style={{ fontSize: '0.78rem', opacity: 0.75, marginTop: '0.1rem' }}>{stat.label}</div>
             </div>
           ))}
