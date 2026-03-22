@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Stats bar */}
       <div style={{ background: 'var(--burgundy)', color: 'white' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', padding: '1rem' }}>
+        <div className="container stats-bar" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', padding: '1.5rem' }}>
           {[
             { icon: <BookOpen size={20} />, value: '1965', label: 'Established' },
             { icon: <Users size={20} />, value: '800+', label: 'Students' },

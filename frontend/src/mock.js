@@ -34,13 +34,13 @@ export const heroSlides = [
     subtitle: "A community of learners, thinkers, and achievers",
     cta: "Student Life"
   },
-  {
-    id: 4,
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80",
-    title: "Join Our School Family",
-    subtitle: "Applications open for the new academic year",
-    cta: "Admissions"
-  }
+{
+  id: 4,
+  image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=1600&q=80",
+  title: "Join Our School Family",
+  subtitle: "Applications open for the new academic year",
+  cta: "Admissions"
+},
 ];
 
 export const announcements = [

@@ -296,3 +296,6 @@ img {
   .btn { padding: 0.6rem 1.1rem; font-size: 0.88rem; }
   .card { border-radius: 10px; }
 }
+@media (max-width: 600px) {
+  .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+}
