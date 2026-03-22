@@ -185,6 +185,14 @@ img {
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .section { padding: 3rem 0; }
+  .container { padding: 0 1rem; }
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  .page-hero { padding: 3rem 0 2.5rem; }
+  .page-hero p { font-size: 0.95rem; }
 }
 
 .divider {

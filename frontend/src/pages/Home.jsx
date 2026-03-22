@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Stats bar */}
       <div style={{ background: 'var(--burgundy)', color: 'white' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', padding: '1.5rem' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', padding: '1rem' }}>
           {[
             { icon: <BookOpen size={20} />, value: '1965', label: 'Established' },
             { icon: <Users size={20} />, value: '800+', label: 'Students' },
@@ -87,7 +87,7 @@ export default function Home() {
 
       {/* Mission */}
       <section className="section">
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
             <span className="badge badge-seafoam" style={{ marginBottom: '1rem' }}>Our Mission</span>
             <h2 style={{ color: 'var(--burgundy)', marginBottom: '1rem' }}>Building Tomorrow's Leaders Today</h2>
@@ -99,7 +99,8 @@ export default function Home() {
               <Link to="/academics" className="btn btn-outline">Academic Programs</Link>
             </div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}
+>
             {[
               { title: 'Quality Education', desc: 'Rigorous academics aligned with CXC standards', color: 'var(--burgundy)' },
               { title: 'Character Development', desc: 'Values, ethics, and civic responsibility', color: 'var(--seafoam-dark)' },
