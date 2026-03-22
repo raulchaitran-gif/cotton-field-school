@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, BookOpen, Users, Award, Building2, ArrowRight, Bell } from 'lucide-react';
+import { BookOpen, Users, Award, Building2, ArrowRight, Bell } from 'lucide-react';
 import { heroSlides, announcements, facilities, schoolInfo } from '../mock';
 
 export default function Home() {
@@ -50,14 +50,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Controls */}
-        <button onClick={prev} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', zIndex: 3, background: 'rgba(255,255,255,0.15)', border: 'none', borderRadius: '50%', width: 44, height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: 'white', backdropFilter: 'blur(4px)' }}>
-          <ChevronLeft size={22} />
-        </button>
-        <button onClick={next} style={{ position: 'absolute', right: '1rem', top: '50%', transform: 'translateY(-50%)', zIndex: 3, background: 'rgba(255,255,255,0.15)', border: 'none', borderRadius: '50%', width: 44, height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: 'white', backdropFilter: 'blur(4px)' }}>
-          <ChevronRight size={22} />
-        </button>
+     
 
         {/* Indicators */}
         <div style={{ position: 'absolute', bottom: '1.5rem', left: '50%', transform: 'translateX(-50%)', zIndex: 3, display: 'flex', gap: '0.5rem' }}>
